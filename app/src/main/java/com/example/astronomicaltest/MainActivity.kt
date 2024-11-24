@@ -4,20 +4,29 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.annotation.RequiresApi
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import com.example.astronomicaltest.endscreen.EndScreen
 import com.example.astronomicaltest.startscreen.StartScreen
 import com.example.astronomicaltest.testscreen.TestScreen
 import com.example.astronomicaltest.ui.theme.AstronomicalTestTheme
+import com.google.relay.compose.RelayContainer
+import com.google.relay.compose.RelayContainerScope
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,6 +41,7 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
+@Preview(showSystemUi = true)
 fun Program() {
     val questions = remember {
         mutableListOf(
@@ -70,6 +80,10 @@ fun Program() {
     val currentQuestionId = remember { mutableStateOf(0) }
     val correctAnswers = remember { mutableStateOf(0) }
     val currentFrame = remember { mutableStateOf(0) }
+    //val answers: MutableList<Answer> = mutableListOf()
+    val answers = remember { mutableStateListOf<Answer>() }
+
+
 
     if (currentFrame.value == 0) {
         StartScreen(onStartButtonTapped = {
@@ -86,7 +100,7 @@ fun Program() {
         val option3Color = remember { mutableStateOf(questions[currentQuestionId.value].colors[2]) }
 
         TestScreen(titleTextContent = "${currentQuestionId.value + 1} вопрос из 15",
-            questionTextContent = questions[currentQuestionId.value].Text,
+            questionTextContent = questions[currentQuestionId.value].text,
             option1ButtonTextTextContent = option1Text,
             option2ButtonTextTextContent = option2Text,
             option3ButtonTextTextContent = option3Text,
@@ -114,6 +128,7 @@ fun Program() {
                     currentQuestionId.value++
                     currentQuestionId.value--
                     questions[currentQuestionId.value].showAnswer = true
+                    answers.add(Answer(option1Text, option1Color.value))
                 }
             },
             onOption2ButtonTapped = {
@@ -136,6 +151,7 @@ fun Program() {
                     currentQuestionId.value++
                     currentQuestionId.value--
                     questions[currentQuestionId.value].showAnswer = true
+                    answers.add(Answer(option2Text, option2Color.value))
                 }
             },
             onOption3ButtonTapped = {
@@ -158,6 +174,7 @@ fun Program() {
                     currentQuestionId.value++
                     currentQuestionId.value--
                     questions[currentQuestionId.value].showAnswer = true
+                    answers.add(Answer(option3Text, option3Color.value))
                 }
             },
             onPreviousButtonTapped = {
@@ -174,7 +191,8 @@ fun Program() {
                     option1Color.value = questions[currentQuestionId.value].colors[0]
                     option2Color.value = questions[currentQuestionId.value].colors[1]
                     option3Color.value = questions[currentQuestionId.value].colors[2]
-                } else {
+                }
+                else if (answers.size == questions.size) {
                     currentFrame.value = 2
                 }
             }
@@ -184,28 +202,44 @@ fun Program() {
     if (currentFrame.value == 2) {
         EndScreen(
             titleTextContent = "Результат: ${correctAnswers.value} правильных ответов из 15",
+            answer1TextContent = "1: " + answers[0].answer,
+            answer2TextContent = "2: " + answers[1].answer,
+            answer3TextContent = "3: " + answers[2].answer,
+            answer4TextContent = "4: " + answers[3].answer,
+            answer5TextContent = "5: " + answers[4].answer,
+            answer6TextContent = "6: " + answers[5].answer,
+            answer7TextContent = "7: " + answers[6].answer,
+            answer8TextContent = "8: " + answers[7].answer,
+            answer9TextContent = "9: " + answers[8].answer,
+            answer10TextContent = "10: " + answers[9].answer,
+            answer11TextContent = "11: " + answers[10].answer,
+            answer12TextContent = "12: " + answers[11].answer,
+            answer13TextContent = "13: " + answers[12].answer,
+            answer14TextContent = "14: " + answers[13].answer,
+            answer15TextContent = "15: " + answers[14].answer,
+            answer1Color = answers[0].color,
+            answer2Color = answers[1].color,
+            answer3Color = answers[2].color,
+            answer4Color = answers[3].color,
+            answer5Color = answers[4].color,
+            answer6Color = answers[5].color,
+            answer7Color = answers[6].color,
+            answer8Color = answers[7].color,
+            answer9Color = answers[8].color,
+            answer10Color = answers[9].color,
+            answer11Color = answers[10].color,
+            answer12Color = answers[11].color,
+            answer13Color = answers[12].color,
+            answer14Color = answers[13].color,
+            answer15Color = answers[14].color,
             onEndButtonTapped = {
             Runtime.getRuntime().exit(0)
         })
     }
 }
 
-@Preview(showSystemUi = true)
-@Composable
-fun Preview() {
-    AstronomicalTestTheme {
-        TestScreen(titleTextContent = "1 вопрос из 15",
-            questionTextContent = "Самая большая планета в Солнечной системе?",
-            option1ButtonTextTextContent = "Земля",
-            option2ButtonTextTextContent = "Меркурий",
-            option3ButtonTextTextContent = "Юпитер",
-            option1ButtonTextColor = Color.White,
-            option2ButtonTextColor = Color.White,
-            option3ButtonTextColor = Color.White,
-            nextButtonTextTextContent = "Далее")
-    }
-}
-
-data class Question(val Text: String, val answers: List<String>, val correctAnswer: String,
+data class Question(val text: String, val answers: List<String>, val correctAnswer: String,
     var colors: MutableList<Color> = MutableList(answers.size) {Color.White},
     var showAnswer: Boolean = false)
+
+data class Answer(val answer: String, val color: Color)

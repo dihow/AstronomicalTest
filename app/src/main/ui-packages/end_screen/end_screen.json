@@ -5,7 +5,7 @@
     "type": "figma",
     "file": "sGxnqqjKmSBZHb9baEE7b7",
     "node": "1:35",
-    "version": "2154439915044759039",
+    "version": "2154504832907131059",
     "component-id": "aa8ba18c27deee17d9411299343797fefc04cd68"
   },
   "default": "EndScreen",
@@ -22,7 +22,71 @@
       },
       {
         "type": "group",
+        "id": "AnswersList"
+      },
+      {
+        "type": "group",
         "id": "EndButton"
+      },
+      {
+        "type": "text",
+        "id": "answer1"
+      },
+      {
+        "type": "text",
+        "id": "answer2"
+      },
+      {
+        "type": "text",
+        "id": "answer3"
+      },
+      {
+        "type": "text",
+        "id": "answer4"
+      },
+      {
+        "type": "text",
+        "id": "answer5"
+      },
+      {
+        "type": "text",
+        "id": "answer6"
+      },
+      {
+        "type": "text",
+        "id": "answer7"
+      },
+      {
+        "type": "text",
+        "id": "answer8"
+      },
+      {
+        "type": "text",
+        "id": "answer9"
+      },
+      {
+        "type": "text",
+        "id": "answer10"
+      },
+      {
+        "type": "text",
+        "id": "answer11"
+      },
+      {
+        "type": "text",
+        "id": "answer12"
+      },
+      {
+        "type": "text",
+        "id": "answer13"
+      },
+      {
+        "type": "text",
+        "id": "answer14"
+      },
+      {
+        "type": "text",
+        "id": "answer15"
       },
       {
         "type": "text",
@@ -36,15 +100,15 @@
             "id": "top_level",
             "padding": {
               "left": 10.0,
-              "top": 10.0,
               "right": 10.0,
-              "bottom": 294.0
+              "bottom": 36.0
             },
             "children": [
               "Title",
+              "AnswersList",
               "EndButton"
             ],
-            "item-spacing": 167.0,
+            "item-spacing": 17.0,
             "background-color": {
               "alpha": 1.0,
               "hue": 0.0,
@@ -71,6 +135,42 @@
             "text-size": 32.0,
             "line-height": 1.1490000486373901,
             "typeface": "Ubuntu"
+          },
+          {
+            "id": "AnswersList",
+            "padding": {
+              "left": 24.0,
+              "top": 13.0,
+              "right": 24.0,
+              "bottom": 13.0
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 342.0
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "children": [
+              "answer1",
+              "answer2",
+              "answer3",
+              "answer4",
+              "answer5",
+              "answer6",
+              "answer7",
+              "answer8",
+              "answer9",
+              "answer10",
+              "answer11",
+              "answer12",
+              "answer13",
+              "answer14",
+              "answer15"
+            ],
+            "item-spacing": 5.0
           },
           {
             "id": "EndButton",
@@ -118,6 +218,336 @@
             "clip-content": false
           },
           {
+            "id": "answer1",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 18.0
+              }
+            },
+            "font-weight": 500.0,
+            "color": "$answer1 color",
+            "text-content": "$answer1 text content",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-align": "left",
+            "text-size": 16.0,
+            "line-height": 1.1490000486373901,
+            "typeface": "Ubuntu"
+          },
+          {
+            "id": "answer2",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 18.0
+              }
+            },
+            "font-weight": 500.0,
+            "color": "$answer2 color",
+            "text-content": "$answer2 text content",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-align": "left",
+            "text-size": 16.0,
+            "line-height": 1.1490000486373901,
+            "typeface": "Ubuntu"
+          },
+          {
+            "id": "answer3",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 18.0
+              }
+            },
+            "font-weight": 500.0,
+            "color": "$answer3 color",
+            "text-content": "$answer3 text content",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-align": "left",
+            "text-size": 16.0,
+            "line-height": 1.1490000486373901,
+            "typeface": "Ubuntu"
+          },
+          {
+            "id": "answer4",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 18.0
+              }
+            },
+            "font-weight": 500.0,
+            "color": "$answer4 color",
+            "text-content": "$answer4 text content",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-align": "left",
+            "text-size": 16.0,
+            "line-height": 1.1490000486373901,
+            "typeface": "Ubuntu"
+          },
+          {
+            "id": "answer5",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 18.0
+              }
+            },
+            "font-weight": 500.0,
+            "color": "$answer5 color",
+            "text-content": "$answer5 text content",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-align": "left",
+            "text-size": 16.0,
+            "line-height": 1.1490000486373901,
+            "typeface": "Ubuntu"
+          },
+          {
+            "id": "answer6",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 18.0
+              }
+            },
+            "font-weight": 500.0,
+            "color": "$answer6 color",
+            "text-content": "$answer6 text content",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-align": "left",
+            "text-size": 16.0,
+            "line-height": 1.1490000486373901,
+            "typeface": "Ubuntu"
+          },
+          {
+            "id": "answer7",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 19.0
+              }
+            },
+            "font-weight": 500.0,
+            "color": "$answer7 color",
+            "text-content": "$answer7 text content",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-align": "left",
+            "text-size": 16.0,
+            "line-height": 1.1490000486373901,
+            "typeface": "Ubuntu"
+          },
+          {
+            "id": "answer8",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 18.0
+              }
+            },
+            "font-weight": 500.0,
+            "color": "$answer8 color",
+            "text-content": "$answer8 text content",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-align": "left",
+            "text-size": 16.0,
+            "line-height": 1.1490000486373901,
+            "typeface": "Ubuntu"
+          },
+          {
+            "id": "answer9",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 18.0
+              }
+            },
+            "font-weight": 500.0,
+            "color": "$answer9 color",
+            "text-content": "$answer9 text content",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-align": "left",
+            "text-size": 16.0,
+            "line-height": 1.1490000486373901,
+            "typeface": "Ubuntu"
+          },
+          {
+            "id": "answer10",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 18.0
+              }
+            },
+            "font-weight": 500.0,
+            "color": "$answer10 color",
+            "text-content": "$answer10 text content",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-align": "left",
+            "text-size": 16.0,
+            "line-height": 1.1490000486373901,
+            "typeface": "Ubuntu"
+          },
+          {
+            "id": "answer11",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 18.0
+              }
+            },
+            "font-weight": 500.0,
+            "color": "$answer11 color",
+            "text-content": "$answer11 text content",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-align": "left",
+            "text-size": 16.0,
+            "line-height": 1.1490000486373901,
+            "typeface": "Ubuntu"
+          },
+          {
+            "id": "answer12",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 18.0
+              }
+            },
+            "font-weight": 500.0,
+            "color": "$answer12 color",
+            "text-content": "$answer12 text content",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-align": "left",
+            "text-size": 16.0,
+            "line-height": 1.1490000486373901,
+            "typeface": "Ubuntu"
+          },
+          {
+            "id": "answer13",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 18.0
+              }
+            },
+            "font-weight": 500.0,
+            "color": "$answer13 color",
+            "text-content": "$answer13 text content",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-align": "left",
+            "text-size": 16.0,
+            "line-height": 1.1490000486373901,
+            "typeface": "Ubuntu"
+          },
+          {
+            "id": "answer14",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 18.0
+              }
+            },
+            "font-weight": 500.0,
+            "color": "$answer14 color",
+            "text-content": "$answer14 text content",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-align": "left",
+            "text-size": 16.0,
+            "line-height": 1.1490000486373901,
+            "typeface": "Ubuntu"
+          },
+          {
+            "id": "answer15",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 18.0
+              }
+            },
+            "font-weight": 500.0,
+            "color": "$answer15 color",
+            "text-content": "$answer15 text content",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-align": "left",
+            "text-size": 16.0,
+            "line-height": 1.1490000486373901,
+            "typeface": "Ubuntu"
+          },
+          {
             "id": "EndButtonText",
             "size-constraints": {
               "width-constraints": {
@@ -156,6 +586,156 @@
       "data-type": "void-callback",
       "required": false,
       "description": ""
+    },
+    "answer1 text content": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "answer1 color": {
+      "data-type": "color",
+      "required": false,
+      "description": ""
+    },
+    "answer2 text content": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "answer2 color": {
+      "data-type": "color",
+      "required": false,
+      "description": ""
+    },
+    "answer3 text content": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "answer3 color": {
+      "data-type": "color",
+      "required": false,
+      "description": ""
+    },
+    "answer4 text content": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "answer4 color": {
+      "data-type": "color",
+      "required": false,
+      "description": ""
+    },
+    "answer5 text content": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "answer5 color": {
+      "data-type": "color",
+      "required": false,
+      "description": ""
+    },
+    "answer6 text content": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "answer6 color": {
+      "data-type": "color",
+      "required": false,
+      "description": ""
+    },
+    "answer7 text content": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "answer7 color": {
+      "data-type": "color",
+      "required": false,
+      "description": ""
+    },
+    "answer8 text content": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "answer8 color": {
+      "data-type": "color",
+      "required": false,
+      "description": ""
+    },
+    "answer9 text content": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "answer9 color": {
+      "data-type": "color",
+      "required": false,
+      "description": ""
+    },
+    "answer10 text content": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "answer10 color": {
+      "data-type": "color",
+      "required": false,
+      "description": ""
+    },
+    "answer11 text content": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "answer11 color": {
+      "data-type": "color",
+      "required": false,
+      "description": ""
+    },
+    "answer12 text content": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "answer12 color": {
+      "data-type": "color",
+      "required": false,
+      "description": ""
+    },
+    "answer13 text content": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "answer13 color": {
+      "data-type": "color",
+      "required": false,
+      "description": ""
+    },
+    "answer14 text content": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "answer14 color": {
+      "data-type": "color",
+      "required": false,
+      "description": ""
+    },
+    "answer15 text content": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "answer15 color": {
+      "data-type": "color",
+      "required": false,
+      "description": ""
     }
   },
   "previews": [
@@ -166,7 +746,112 @@
         "height": 680.0
       },
       "parameters": {
-        "Title text content": "Результат: ? правильных ответов из 15"
+        "Title text content": "Результат: ? правильных ответов из 15",
+        "answer1 text content": "Вопрос 1: Ответ 1",
+        "answer1 color": {
+          "alpha": 1.0,
+          "hue": 0.0,
+          "saturation": 0.0,
+          "value": 0.0
+        },
+        "answer2 text content": "Вопрос 2: Ответ 2",
+        "answer2 color": {
+          "alpha": 1.0,
+          "hue": 0.0,
+          "saturation": 0.0,
+          "value": 0.0
+        },
+        "answer3 text content": "Вопрос 3: Ответ 3",
+        "answer3 color": {
+          "alpha": 1.0,
+          "hue": 0.0,
+          "saturation": 0.0,
+          "value": 0.0
+        },
+        "answer4 text content": "Вопрос 4: Ответ 4",
+        "answer4 color": {
+          "alpha": 1.0,
+          "hue": 0.0,
+          "saturation": 0.0,
+          "value": 0.0
+        },
+        "answer5 text content": "Вопрос 5: Ответ 5",
+        "answer5 color": {
+          "alpha": 1.0,
+          "hue": 0.0,
+          "saturation": 0.0,
+          "value": 0.0
+        },
+        "answer6 text content": "Вопрос 6: Ответ 6",
+        "answer6 color": {
+          "alpha": 1.0,
+          "hue": 0.0,
+          "saturation": 0.0,
+          "value": 0.0
+        },
+        "answer7 text content": "Вопрос 7: Ответ 7",
+        "answer7 color": {
+          "alpha": 1.0,
+          "hue": 0.0,
+          "saturation": 0.0,
+          "value": 0.0
+        },
+        "answer8 text content": "Вопрос 8: Ответ 8",
+        "answer8 color": {
+          "alpha": 1.0,
+          "hue": 0.0,
+          "saturation": 0.0,
+          "value": 0.0
+        },
+        "answer9 text content": "Вопрос 9: Ответ 9",
+        "answer9 color": {
+          "alpha": 1.0,
+          "hue": 0.0,
+          "saturation": 0.0,
+          "value": 0.0
+        },
+        "answer10 text content": "Вопрос 10: Ответ 10",
+        "answer10 color": {
+          "alpha": 1.0,
+          "hue": 0.0,
+          "saturation": 0.0,
+          "value": 0.0
+        },
+        "answer11 text content": "Вопрос 11: Ответ 11",
+        "answer11 color": {
+          "alpha": 1.0,
+          "hue": 0.0,
+          "saturation": 0.0,
+          "value": 0.0
+        },
+        "answer12 text content": "Вопрос 12: Ответ 12",
+        "answer12 color": {
+          "alpha": 1.0,
+          "hue": 0.0,
+          "saturation": 0.0,
+          "value": 0.0
+        },
+        "answer13 text content": "Вопрос 13: Ответ 13",
+        "answer13 color": {
+          "alpha": 1.0,
+          "hue": 0.0,
+          "saturation": 0.0,
+          "value": 0.0
+        },
+        "answer14 text content": "Вопрос 14: Ответ 14",
+        "answer14 color": {
+          "alpha": 1.0,
+          "hue": 0.0,
+          "saturation": 0.0,
+          "value": 0.0
+        },
+        "answer15 text content": "Вопрос 15: Ответ 15",
+        "answer15 color": {
+          "alpha": 1.0,
+          "hue": 0.0,
+          "saturation": 0.0,
+          "value": 0.0
+        }
       }
     }
   ],
