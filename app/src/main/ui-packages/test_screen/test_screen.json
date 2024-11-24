@@ -1,0 +1,650 @@
+{
+  "name": "test_screen",
+  "version": 33,
+  "source-key": {
+    "type": "figma",
+    "file": "sGxnqqjKmSBZHb9baEE7b7",
+    "node": "1:28",
+    "version": "2154454398207656445",
+    "component-id": "c31a36e10915505d8cf3043ba7744043fd5f3849"
+  },
+  "default": "TestScreen",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "group",
+        "id": "Header"
+      },
+      {
+        "type": "group",
+        "id": "Body"
+      },
+      {
+        "type": "group",
+        "id": "Navigation"
+      },
+      {
+        "type": "text",
+        "id": "Title"
+      },
+      {
+        "type": "text",
+        "id": "Question"
+      },
+      {
+        "type": "group",
+        "id": "Option1Button"
+      },
+      {
+        "type": "group",
+        "id": "Option2Button"
+      },
+      {
+        "type": "group",
+        "id": "Option3Button"
+      },
+      {
+        "type": "text",
+        "id": "Option1ButtonText"
+      },
+      {
+        "type": "text",
+        "id": "Option2ButtonText"
+      },
+      {
+        "type": "text",
+        "id": "Option3ButtonText"
+      },
+      {
+        "type": "group",
+        "id": "PreviousButton"
+      },
+      {
+        "type": "group",
+        "id": "NextButton"
+      },
+      {
+        "type": "text",
+        "id": "PreviousButtonText"
+      },
+      {
+        "type": "text",
+        "id": "NextButtonText"
+      }
+    ],
+    "modes": {
+      "TestScreen": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": {
+              "left": 10.0,
+              "right": 10.0
+            },
+            "children": [
+              "Header",
+              "Body",
+              "Navigation"
+            ],
+            "item-spacing": 59.0,
+            "background-color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            }
+          },
+          {
+            "id": "Header",
+            "padding": {
+              "top": 19.0,
+              "bottom": 24.0
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 346.0
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "main-axis-align": "start",
+            "children": [
+              "Title",
+              "Question"
+            ],
+            "item-spacing": 27.0
+          },
+          {
+            "id": "Body",
+            "padding": {
+              "left": 29.0,
+              "top": 8.0,
+              "right": 29.0,
+              "bottom": 8.0
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "children": [
+              "Option1Button",
+              "Option2Button",
+              "Option3Button"
+            ],
+            "item-spacing": 15.0
+          },
+          {
+            "id": "Navigation",
+            "padding": 10.0,
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 380.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 90.0
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "PreviousButton",
+              "NextButton"
+            ],
+            "item-spacing": 15.0
+          },
+          {
+            "id": "Title",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 320.0
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": 700.0,
+            "text-content": "$Title text content",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-align": "left",
+            "text-size": 24.0,
+            "line-height": 1.1490000089009602,
+            "typeface": "Ubuntu"
+          },
+          {
+            "id": "Question",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 320.0
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": 500.0,
+            "text-content": "$Question text content",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-align": "left",
+            "text-size": 24.0,
+            "line-height": 1.1490000089009602,
+            "typeface": "Ubuntu"
+          },
+          {
+            "id": "Option1Button",
+            "padding": {
+              "left": 65.0,
+              "top": 21.0,
+              "right": 65.0,
+              "bottom": 21.0
+            },
+            "border-radius": 20.0,
+            "drop-shadow": {
+              "color": {
+                "alpha": 1.0,
+                "hue": 31.948051948051944,
+                "saturation": 0.806282722513089,
+                "value": 0.7490196078431373
+              },
+              "blur": 8.0,
+              "offset-x": 0.0,
+              "offset-y": 4.0,
+              "spread": 0.0,
+              "blend-mode": "normal"
+            },
+            "tap-handler": "$on Option1Button tapped",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 296.0
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "Option1ButtonText"
+            ],
+            "item-spacing": 10.0,
+            "background-color": {
+              "alpha": 1.0,
+              "hue": 21.0989010989011,
+              "saturation": 0.7398373983739838,
+              "value": 0.9647058823529412
+            },
+            "clip-content": false
+          },
+          {
+            "id": "Option2Button",
+            "padding": {
+              "left": 65.0,
+              "top": 21.0,
+              "right": 65.0,
+              "bottom": 21.0
+            },
+            "border-radius": 20.0,
+            "drop-shadow": {
+              "color": {
+                "alpha": 1.0,
+                "hue": 31.948051948051944,
+                "saturation": 0.806282722513089,
+                "value": 0.7490196078431373
+              },
+              "blur": 8.0,
+              "offset-x": 0.0,
+              "offset-y": 4.0,
+              "spread": 0.0,
+              "blend-mode": "normal"
+            },
+            "tap-handler": "$on Option2Button tapped",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 296.0
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "Option2ButtonText"
+            ],
+            "item-spacing": 10.0,
+            "background-color": {
+              "alpha": 1.0,
+              "hue": 21.0989010989011,
+              "saturation": 0.7398373983739838,
+              "value": 0.9647058823529412
+            },
+            "clip-content": false
+          },
+          {
+            "id": "Option3Button",
+            "padding": {
+              "left": 65.0,
+              "top": 21.0,
+              "right": 65.0,
+              "bottom": 21.0
+            },
+            "border-radius": 20.0,
+            "drop-shadow": {
+              "color": {
+                "alpha": 1.0,
+                "hue": 31.948051948051944,
+                "saturation": 0.806282722513089,
+                "value": 0.7490196078431373
+              },
+              "blur": 8.0,
+              "offset-x": 0.0,
+              "offset-y": 4.0,
+              "spread": 0.0,
+              "blend-mode": "normal"
+            },
+            "tap-handler": "$on Option3Button tapped",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 296.0
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "Option3ButtonText"
+            ],
+            "item-spacing": 10.0,
+            "background-color": {
+              "alpha": 1.0,
+              "hue": 21.0989010989011,
+              "saturation": 0.7398373983739838,
+              "value": 0.9647058823529412
+            },
+            "clip-content": false
+          },
+          {
+            "id": "Option1ButtonText",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 270.0
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": 500.0,
+            "color": "$Option1ButtonText color",
+            "text-content": "$Option1ButtonText text content",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-size": 20.0,
+            "line-height": 1.149000072479248,
+            "typeface": "Ubuntu"
+          },
+          {
+            "id": "Option2ButtonText",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 270.0
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": 500.0,
+            "color": "$Option2ButtonText color",
+            "text-content": "$Option2ButtonText text content",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-size": 20.0,
+            "line-height": 1.149000072479248,
+            "typeface": "Ubuntu"
+          },
+          {
+            "id": "Option3ButtonText",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 270.0
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": 500.0,
+            "color": "$Option3ButtonText color",
+            "text-content": "$Option3ButtonText text content",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-size": 20.0,
+            "line-height": 1.149000072479248,
+            "typeface": "Ubuntu"
+          },
+          {
+            "id": "PreviousButton",
+            "padding": {
+              "left": 42.0,
+              "top": 9.0,
+              "right": 42.0,
+              "bottom": 9.0
+            },
+            "border-radius": 20.0,
+            "drop-shadow": {
+              "color": {
+                "alpha": 1.0,
+                "hue": 31.948051948051944,
+                "saturation": 0.806282722513089,
+                "value": 0.7490196078431373
+              },
+              "blur": 8.0,
+              "offset-x": 0.0,
+              "offset-y": 4.0,
+              "spread": 0.0,
+              "blend-mode": "normal"
+            },
+            "tap-handler": "$on PreviousButton tapped",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 165.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 52.0
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "PreviousButtonText"
+            ],
+            "item-spacing": 10.0,
+            "background-color": {
+              "alpha": 1.0,
+              "hue": 21.0989010989011,
+              "saturation": 0.7398373983739838,
+              "value": 0.9647058823529412
+            },
+            "clip-content": false
+          },
+          {
+            "id": "NextButton",
+            "padding": {
+              "left": 42.0,
+              "top": 9.0,
+              "right": 42.0,
+              "bottom": 9.0
+            },
+            "border-radius": 20.0,
+            "drop-shadow": {
+              "color": {
+                "alpha": 1.0,
+                "hue": 31.948051948051944,
+                "saturation": 0.806282722513089,
+                "value": 0.7490196078431373
+              },
+              "blur": 8.0,
+              "offset-x": 0.0,
+              "offset-y": 4.0,
+              "spread": 0.0,
+              "blend-mode": "normal"
+            },
+            "tap-handler": "$on NextButton tapped",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 165.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 52.0
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "NextButtonText"
+            ],
+            "item-spacing": 10.0,
+            "background-color": {
+              "alpha": 1.0,
+              "hue": 21.0989010989011,
+              "saturation": 0.7398373983739838,
+              "value": 0.9647058823529412
+            },
+            "clip-content": false
+          },
+          {
+            "id": "PreviousButtonText",
+            "font-weight": 500.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            },
+            "text-content": "Назад",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": 20.0,
+            "line-height": 1.149000072479248,
+            "typeface": "Ubuntu"
+          },
+          {
+            "id": "NextButtonText",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 108.0
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": 500.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            },
+            "text-content": "$NextButtonText text content",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-size": 20.0,
+            "line-height": 1.149000072479248,
+            "typeface": "Ubuntu"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "Title text content": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "Question text content": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "on Option1Button tapped": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "on Option2Button tapped": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "on Option3Button tapped": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "Option1ButtonText text content": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "Option1ButtonText color": {
+      "data-type": "color",
+      "required": false,
+      "description": ""
+    },
+    "Option2ButtonText text content": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "Option2ButtonText color": {
+      "data-type": "color",
+      "required": false,
+      "description": ""
+    },
+    "Option3ButtonText text content": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "Option3ButtonText color": {
+      "data-type": "color",
+      "required": false,
+      "description": ""
+    },
+    "on PreviousButton tapped": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "on NextButton tapped": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "NextButtonText text content": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "TestScreen",
+      "size": {
+        "width": 386.0,
+        "height": 680.0
+      },
+      "parameters": {
+        "Title text content": "? вопрос из 15",
+        "Question text content": "Вопрос ?",
+        "Option1ButtonText text content": "Вариант ответа 1",
+        "Option1ButtonText color": {
+          "alpha": 1.0,
+          "hue": 0.0,
+          "saturation": 0.0,
+          "value": 1.0
+        },
+        "Option2ButtonText text content": "Вариант ответа 2",
+        "Option2ButtonText color": {
+          "alpha": 1.0,
+          "hue": 0.0,
+          "saturation": 0.0,
+          "value": 1.0
+        },
+        "Option3ButtonText text content": "Вариант ответа 3",
+        "Option3ButtonText color": {
+          "alpha": 1.0,
+          "hue": 0.0,
+          "saturation": 0.0,
+          "value": 1.0
+        },
+        "NextButtonText text content": "Далее"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

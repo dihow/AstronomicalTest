@@ -1,0 +1,176 @@
+{
+  "name": "end_screen",
+  "version": 33,
+  "source-key": {
+    "type": "figma",
+    "file": "sGxnqqjKmSBZHb9baEE7b7",
+    "node": "1:35",
+    "version": "2154439915044759039",
+    "component-id": "aa8ba18c27deee17d9411299343797fefc04cd68"
+  },
+  "default": "EndScreen",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "Title"
+      },
+      {
+        "type": "group",
+        "id": "EndButton"
+      },
+      {
+        "type": "text",
+        "id": "EndButtonText"
+      }
+    ],
+    "modes": {
+      "EndScreen": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": {
+              "left": 10.0,
+              "top": 10.0,
+              "right": 10.0,
+              "bottom": 294.0
+            },
+            "children": [
+              "Title",
+              "EndButton"
+            ],
+            "item-spacing": 167.0,
+            "background-color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            }
+          },
+          {
+            "id": "Title",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 342.0
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": 700.0,
+            "text-content": "$Title text content",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-align": "left",
+            "text-size": 32.0,
+            "line-height": 1.1490000486373901,
+            "typeface": "Ubuntu"
+          },
+          {
+            "id": "EndButton",
+            "padding": {
+              "left": 107.0,
+              "top": 18.0,
+              "right": 107.0,
+              "bottom": 18.0
+            },
+            "border-radius": 20.0,
+            "drop-shadow": {
+              "color": {
+                "alpha": 1.0,
+                "hue": 31.948051948051944,
+                "saturation": 0.806282722513089,
+                "value": 0.7490196078431373
+              },
+              "blur": 8.0,
+              "offset-x": 0.0,
+              "offset-y": 4.0,
+              "spread": 0.0,
+              "blend-mode": "normal"
+            },
+            "tap-handler": "$on EndButton tapped",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 296.0
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "EndButtonText"
+            ],
+            "item-spacing": 10.0,
+            "background-color": {
+              "alpha": 1.0,
+              "hue": 21.0989010989011,
+              "saturation": 0.7398373983739838,
+              "value": 0.9647058823529412
+            },
+            "clip-content": false
+          },
+          {
+            "id": "EndButtonText",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 229.0
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": 500.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            },
+            "text-content": "Завершить",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-size": 24.0,
+            "line-height": 1.1490000089009602,
+            "typeface": "Ubuntu"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "Title text content": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "on EndButton tapped": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "EndScreen",
+      "size": {
+        "width": 386.0,
+        "height": 680.0
+      },
+      "parameters": {
+        "Title text content": "Результат: ? правильных ответов из 15"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

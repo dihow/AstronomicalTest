@@ -1,0 +1,170 @@
+{
+  "name": "start_screen",
+  "version": 33,
+  "source-key": {
+    "type": "figma",
+    "file": "sGxnqqjKmSBZHb9baEE7b7",
+    "node": "1:3",
+    "version": "2154409231802680948",
+    "component-id": "f697be5fb860ef3efb887d80bf52319e559ebdbf"
+  },
+  "default": "StartScreen",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "Title"
+      },
+      {
+        "type": "group",
+        "id": "StartButton"
+      },
+      {
+        "type": "text",
+        "id": "StartButtonText"
+      }
+    ],
+    "modes": {
+      "StartScreen": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": {
+              "left": 45.0,
+              "top": 19.0,
+              "right": 45.0,
+              "bottom": 302.0
+            },
+            "children": [
+              "Title",
+              "StartButton"
+            ],
+            "item-spacing": 202.0,
+            "background-color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            }
+          },
+          {
+            "id": "Title",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 342.0
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": 700.0,
+            "text-content": "Тестирование знаний по астрономии",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-align": "left",
+            "text-size": 32.0,
+            "line-height": 1.1490000486373901,
+            "typeface": "Ubuntu"
+          },
+          {
+            "id": "StartButton",
+            "padding": {
+              "left": 107.0,
+              "top": 18.0,
+              "right": 107.0,
+              "bottom": 18.0
+            },
+            "border-radius": 20.0,
+            "drop-shadow": {
+              "color": {
+                "alpha": 1.0,
+                "hue": 31.948051948051944,
+                "saturation": 0.806282722513089,
+                "value": 0.7490196078431373
+              },
+              "blur": 8.0,
+              "offset-x": 0.0,
+              "offset-y": 4.0,
+              "spread": 0.0,
+              "blend-mode": "normal"
+            },
+            "tap-handler": "$on StartButton tapped",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "StartButtonText"
+            ],
+            "item-spacing": 10.0,
+            "background-color": {
+              "alpha": 1.0,
+              "hue": 21.0989010989011,
+              "saturation": 0.7398373983739838,
+              "value": 0.9647058823529412
+            },
+            "clip-content": false
+          },
+          {
+            "id": "StartButtonText",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 81.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 28.0
+              }
+            },
+            "font-weight": 500.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            },
+            "text-content": "Начать",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-align": "left",
+            "text-size": 24.0,
+            "line-height": 1.1490000089009602,
+            "typeface": "Ubuntu"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "on StartButton tapped": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "StartScreen",
+      "size": {
+        "width": 386.0,
+        "height": 680.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}
